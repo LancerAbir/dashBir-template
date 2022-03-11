@@ -1,0 +1,6 @@
+09-March-2022
+------------
+1. dashboard side bar 
+2. icon add in ionicons JS --> https://ionic.io/ionicons
+3. side bar style 
+4. hovered class add with JavaScript (for mouse over effect)

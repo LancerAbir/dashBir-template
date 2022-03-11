@@ -1,0 +1,30 @@
+.auth {
+  .input-group {
+    border: $border-width solid $gray-400;
+    &.is-invalid {
+      border-color: $danger;
+      svg {
+        fill: $danger;
+      }
+      &:focus-within {
+        border-color: $danger;
+      }
+    }
+    input,
+    .form-select {
+      border: 0;
+    }
+    .input-group-text {
+      border: 0;
+      border-right: 3px solid $gray-400;
+    }
+  }
+
+  .input-group:focus-within {
+    border: 2px solid #87b7ff;
+    .input-group-text {
+      //  border: 0;
+      //  border-right: 4px solid #87b7ff;
+    }
+  }
+}

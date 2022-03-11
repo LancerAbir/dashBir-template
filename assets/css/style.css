@@ -1,0 +1,328 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Dash Bir - Dashboard HTML Template
+    Author: Lancer Abir
+    Author URI:  https://lancer-abir.web.app/
+    Version: 1.1
+    Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. ======= Common CSS =======
+    #. ======= Dashboard Side-Bar CSS =======
+    
+    #. ======= Dashboard Main CSS =======
+        ##. Dashboard TopBar 
+        ##. Dashboard Cards
+        ##. Dashboard Order List
+        ##. 
+  
+-----------------------------------------------------------------------------------*/
+/*======= Common CSS =======*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+    --color-blue: #287bff;
+    --color-white: #fff;
+    --color-black1: #000000;
+    --color-black2: #999;
+    --color-gray: #f5f5f5;
+    --color-heading: red;
+    --font-body: "Ubuntu", sans-serif;
+}
+
+/* font-family: 'Ubuntu', sans-serif; */
+
+body {
+    color: var(--color-black1);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden !important;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-heading);
+    margin: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: var(--color-heading);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+/*======= Dashboard Side-Bar CSS =======*/
+
+.dash__nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--color-blue);
+    border-left: 10px solid var(--color-blue);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.dash__nav.active {
+    width: 80px;
+}
+
+.dash__nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.dash__nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.dash__nav ul li:hover,
+.dash__nav ul li.hovered {
+    background-color: var(--color-white);
+}
+
+.dash__nav ul li:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+.dash__nav ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: var(--color-white);
+}
+
+.dash__nav ul li:hover a,
+.dash__nav ul li.hovered a {
+    color: var(--color-blue);
+}
+
+.dash__nav ul li a .nav__icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.dash__nav ul li a .nav__icon ion-icon {
+    font-size: 1.75em;
+}
+
+.dash__nav ul li a .nav__title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.dash__nav ul li:hover a::before,
+.dash__nav ul li.hovered a::before {
+    content: " ";
+    position: absolute;
+    background-color: transition;
+    top: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0px 10px var(--color-white);
+    pointer-events: none;
+}
+
+.dash__nav ul li:hover a::after,
+.dash__nav ul li.hovered a::after {
+    content: " ";
+    position: absolute;
+    background-color: transition;
+    bottom: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0px 10px var(--color-white);
+    pointer-events: none;
+}
+
+/*======= Dashboard Main CSS =======*/
+
+/* Dashboard TopBar */
+.main__dash {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    height: 100vh;
+    background-color: var(--color-white);
+    transition: all 0.7s ease-out 0s;
+}
+
+.main__dash.active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.main__topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.dash__toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.dash__search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.dash__search label {
+    position: relative;
+    width: 100%;
+}
+
+.dash__search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid var(--color-black2);
+}
+
+.dash__search label ion-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+}
+
+.dash__author {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dash__author img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dashboard Cards */
+
+.main__cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.main__cardBox .cardBox__item {
+    position: relative;
+    background-color: var(--color-white);
+    padding: 30px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all 0.3s ease-out 0s;
+}
+
+.main__cardBox .cardBox__item:hover {
+    background-color: var(--color-blue);
+}
+
+.main__cardBox .cardBox__item:hover .card__numbers,
+.main__cardBox .cardBox__item:hover .card__name,
+.main__cardBox .cardBox__item:hover .card__icon {
+    color: var(--color-white);
+}
+
+.main__cardBox .cardBox__item .card__numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--color-blue);
+}
+
+.main__cardBox .cardBox__item .card__name {
+    font-size: 1.1em;
+    color: var(--color-black2);
+    margin-top: 5px;
+}
+
+.main__cardBox .cardBox__item .card__icon {
+    font-size: 3.5em;
+    color: var(--color-black2);
+}
+
+/* Dashboard Order List */
