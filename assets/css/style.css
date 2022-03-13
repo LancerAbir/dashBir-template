@@ -14,8 +14,8 @@
         ##. Dashboard TopBar 
         ##. Dashboard Cards
         ##. Dashboard Order List
-        ##. 
-  
+        ##. Dashboard New Customers
+    #. ======= Responsive Media Queries CSS =======
 -----------------------------------------------------------------------------------*/
 /*======= Common CSS =======*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
@@ -326,3 +326,212 @@ h6 a {
 }
 
 /* Dashboard Order List */
+.main__details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.main__details .recent__orders {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background-color: var(--color-white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card__header h2 {
+    color: var(--color-blue);
+    font-weight: 600;
+}
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    position: relative;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 6px;
+}
+
+.main__details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.main__details table thead td {
+    font-weight: 600;
+}
+
+.main__details .recent__orders table tr {
+    color: var(--color-black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main__details .recent__orders table tr:last-child {
+    border: none;
+}
+
+.main__details .recent__orders table thead tr:hover {
+    color: var(--color-white);
+    background: var(--color-blue);
+}
+
+.main__details .recent__orders table tr td {
+    padding: 10px;
+}
+
+.main__details .recent__orders table tr td:last-child {
+    text-align: end;
+}
+
+.main__details .recent__orders table tr td:nth-child(2) {
+    text-align: end;
+}
+
+.main__details .recent__orders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.status {
+    padding: 2px 4px;
+    color: var(--color-white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status.delivered {
+    background-color: #8de02c;
+}
+
+.status.Notdelivered {
+    background-color: #f34114d8;
+}
+
+/* Dashboard New Customers */
+.recent__customer {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    background-color: var(--color-white);
+}
+
+.recent__customer .img__Box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.recent__customer .img__Box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent__customer table tr:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.recent__customer table tr td {
+    padding: 12px 10px;
+}
+
+.recent__customer table tr:hover h4 {
+    color: var(--color-white);
+}
+
+.recent__customer table tr td h4 {
+    color: var(--color-black1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.recent__customer table tr td h4 span {
+    color: var(--color-black2);
+    font-size: 14px;
+}
+
+.recent__customer table tr:hover td h4 span {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+/* ======= Responsive Media Queries CSS ======= */
+@media (max-width: 991px) {
+    .dash__nav {
+        left: -300px;
+    }
+    .dash__nav.active {
+        width: 300px;
+        left: 0px;
+    }
+
+    .main__dash {
+        width: 100%;
+        left: 0;
+    }
+    .main__dash active {
+        left: 300px;
+    }
+    .main__cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .main__details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .recent__orders {
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 480px) {
+    .main__cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card__header h2 {
+        font-size: 18px;
+    }
+    .dash__author {
+        min-width: 40px;
+    }
+    .dash__nav {
+        width: 100%;
+        left: -100px;
+        z-index: 1000;
+    }
+    .dash__nav.active {
+        width: 100%;
+        left: 0;
+    }
+    .dash__toggle {
+        z-index: 10001;
+    }
+    .main__dash.active .toggle {
+        color: var(--color-white);
+        position: fixed;
+        right: 0;
+        left: initial;
+    }
+}
