@@ -13,7 +13,7 @@ Apps -->
 		## Default Calendar
 		## Full Calendar
 	# Chat
-	# Mailbox
+	# Mailbox --- https://demo.cork-vue.sbthemes.com/apps/mailbox
 	# Ecommerce
 		## Products
 		## Product Details
@@ -21,7 +21,9 @@ Apps -->
 		## Orders
 		## Order Details
 		## Customers
+		## Shop--- https://spruko.com/demo/sash/sash/html/shop.html
 		## Shopping Cart
+		## Add Product -- https://spruko.com/demo/sash/sash/html/add-product.html
 		## Checkout
 		## Sellers
 		## Seller Details
@@ -53,6 +55,17 @@ Apps -->
 	# Support Tickets
 		## List View
 		## Ticket Details
+	# Loaders --> https://spruko.com/demo/sash/sash/html/loaders.html
+	# Counters --> https://spruko.com/demo/sash/sash/html/loaders.html
+	# Treeview --> https://spruko.com/demo/sash/sash/html/treeview.html
+	# Users-list --> https://spruko.com/demo/sash/sash/html/users-list.html
+	# Crypto-currencies --> https://spruko.com/demo/sash/sash/html/crypto-currencies.html
+
+File-manager --> 
+	# All File manage -- https://spruko.com/demo/sash/sash/html/file-manager.html
+	# File Manager List -- https://spruko.com/demo/sash/sash/html/filemanager-list.html
+	# File Details -- https://spruko.com/demo/sash/sash/html/filemanager-details.html
+	# File Attachments -- https://spruko.com/demo/sash/sash/html/file-attachments.html
 
 Bootstrap -->
 Tailwind CSS -->
@@ -98,29 +111,40 @@ Pages -->
     # Coming Soon
     # Sitemap
     # Search Results
+    # Notifications List --- https://spruko.com/demo/sash/sash/html/notify-list.html
 
 Web Site -->
 Base UI --> 
-	# Alerts
-	# Badges
-	# Buttons
-	# Colors
-	# Cards
+	# Alerts (Bootstrap)
+	# Badges (Bootstrap)
+	# Buttons (Bootstrap)
+	# Colors (Bootstrap)
+	# Cards  https://themesbrand.com/velzon/html/default/ui-cards.html   +   https://spruko.com/demo/sash/sash/html/thumbnails.html
 	# Carousel
-	# Dropdowns
+	# Dropdowns (Bootstrap)
 	# Grid
-	# Images
+	# Avatars
+		## avatar-square  -- https://spruko.com/demo/sash/sash/html/avatarsquare.html
+		## avatar-round -- https://spruko.com/demo/sash/sash/html/avatar-round.html
+		## avatar-radius -- https://spruko.com/demo/sash/sash/html/avatar-radius.html
 	# Tabs
+	# Tags -- https://spruko.com/demo/sash/sash/html/tags.html
+	# Pagination -- https://spruko.com/demo/sash/sash/html/pagination.html
+	# Navigation -- https://spruko.com/demo/sash/sash/html/navigation.html
+	# Breadcrumbs -- https://spruko.com/demo/sash/sash/html/breadcrumbs.html
+	# Toast -- https://spruko.com/demo/sash/sash/html/toast.html
+	# Scrollspy -- https://spruko.com/demo/sash/sash/html/scrollspy.html#scrollspyHeading2
+	# Tooltip and popover -- https://spruko.com/demo/sash/sash/html/tooltipandpopover.html
 	# Accordion & Collapse
 	# Modals
 	# Offcanvas
 	# Placeholders
 	# Progress
 	# Notifications
-	# Media object
+	# Media object -- https://spruko.com/demo/sash/sash/html/mediaobject.html
 	# Embed Video
-	# Typography
-	# Lists
+	# Typography (Bootstrap)
+	# Lists (Bootstrap)
 	# General
 	# Ribbons
 	# Utilities
@@ -134,10 +158,10 @@ Advance UI -->
 	# Animation
 	# Tour
 	# Swiper Slider
-	# Ratings
+	# Ratings -> https://spruko.com/demo/sash/sash/html/rating.html
 	# Highlight
 	# ScrollSpy
-widgets -->
+widgets --> 
 Forms -->
 	# Basic Elements
 	# Form Select
@@ -177,17 +201,32 @@ charts -->
        
 	2. chartjs
 	3. echarts
+	4. flot chart -- https://spruko.com/demo/sash/sash/html/chart-flot.html
+	5. echart -- https://spruko.com/demo/sash/sash/html/chart-echart.html
+	6. morris chart -- https://spruko.com/demo/sash/sash/html/chart-morris.html
+	7. nvd3 chart -- https://spruko.com/demo/sash/sash/html/chart-nvd3.html
+	
 Icoon -->
 	1. remix
 	2. boxicons
 	3. materialdesign
 	4. lineawesome
-	5. font-awesome
-	6. feather
+	5. font-awesome -- https://spruko.com/demo/sash/sash/html/icons.html
+	6. Simple Line Icons -- https://spruko.com/demo/sash/sash/html/icons3.html
+	7. Feathericons -- https://spruko.com/demo/sash/sash/html/icons4.html
+	6. ionicons -- https://spruko.com/demo/sash/sash/html/icons5.html
+	6. Flag Icons -- https://spruko.com/demo/sash/sash/html/icons6.html
+	6. Pe7 Icons -- https://spruko.com/demo/sash/sash/html/icons7.html
+	6. Themify Icons -- https://spruko.com/demo/sash/sash/html/icons8.html
+	6. Typicons Icons -- https://spruko.com/demo/sash/sash/html/icons9.html
+	6. Weather Icons -- https://spruko.com/demo/sash/sash/html/icons10.html
+	6. Bootstrap Icons -- https://spruko.com/demo/sash/sash/html/icons11.html
 maps --> 
 	1. google
 	2. vector
 	3. leaflet
+
+$$$$ switcher   ---   https://spruko.com/demo/sash/sash/html/switcher-1.html
 
 
 
